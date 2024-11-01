@@ -38,35 +38,56 @@ const router = createBrowserRouter([
   },
   {
     path: "/mydrive",
-    element: <Mydrive />,
+    element: (
+      <PrivateRoute>
+        <Mydrive />
+      </PrivateRoute>
+    ),
   },
   {
     path: "/computer",
-    element: <ComputerCom />,
+    element: (
+      <PrivateRoute>
+        <ComputerCom />
+      </PrivateRoute>),
   },
   {
     path: "/starred",
-    element: <StarredComp />,
+    element: (<PrivateRoute>
+      <StarredComp />
+      </PrivateRoute>),
   },
   {
     path: "/recent",
-    element: <RecentCom />,
+    element: (
+      <PrivateRoute>
+    <RecentCom />
+    </PrivateRoute>),
   },
   {
     path: "/shared",
-    element: <ShareWme />,
+    element: (
+      <PrivateRoute>
+    <ShareWme />
+    </PrivateRoute>),
   },
   {
     path: "/spam",
-    element: <SpamCom />,
+    element: (<PrivateRoute>
+      <SpamCom />
+      </PrivateRoute>),
   },
   {
     path: "/bin",
-    element: <BinCom />,
+    element: (<PrivateRoute>
+    <BinCom />
+    </PrivateRoute>),
   },
   {
     path: "/storage",
-    element: <Storage />,
+    element: (<PrivateRoute>
+      <Storage />
+      </PrivateRoute>),
   },
 ]);
 
