@@ -11,7 +11,7 @@ import { AiTwotoneDelete } from "react-icons/ai";
 // import MenuItem from "@mui/material/MenuItem";
 
 function Data({ files }) {
-  console.log(files);
+  
   const [app, setApp] = useState(true);
   const [menu, setMenu] = useState(false);
   const [searchValue, setSearchValue] = useState("");
